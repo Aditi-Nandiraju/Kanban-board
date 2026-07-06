@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kanban Board</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Kanban Board</h1>
+    <div class="tagline">Drag a card anywhere — it stays put after you refresh.</div>
+  </div>
+  <form class="add-column-form" id="addColumnForm">
+    <input type="text" id="newColumnInput" placeholder="New column name…" maxlength="30" required>
+    <button type="submit" class="btn-primary">+ Column</button>
+  </form>
+</header>
+
+<main id="board"></main>
+
+<footer id="statusLine"></footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
